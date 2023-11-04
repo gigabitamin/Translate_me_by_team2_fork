@@ -1,28 +1,32 @@
+==========================================================  
+  
+-- 이 repository는 번역해조 팀의 '언어학습 애플리케이션' 프로젝트 작업물을 포크해와서 리뷰하기 위한 repository 입니다 --  
+
+#### 원본 repository  
+https://github.com/ahnjj/Translate_me  
+
+
+==========================================================
 
 
 
 
-#### fork v0.1.1 python 라이브러리 및 ide 환경 설정, db 세팅
--- settings 파일에서 eviron Env 관련 주석처리 or 수정처리 -> 윈도우에서 한글파일 에러 발생시 복구
--- 파이썬 ide 환경 세팅, 각종 라이브러리 pip install
--- collections channel 세팅 수정 완료
--- corsheaders 직접 설치가 안되는 관계로 github 주소로 설치 pip install git+https://github.com/adamchainz/django-cors-headers.git
--- daphne 설치 및 세팅 완료 daphne translate_project.asgi:application
--- translate_db 생성 및 users_app mirgrate -> django 유저 관련 테이블 생성
+#### fork v0.1.1 python 라이브러리 및 ide 환경 설정, db 세팅  
+-- settings 파일에서 eviron Env 관련 주석처리 or 수정처리 -> 윈도우에서 한글파일 에러 발생시 복구  
+-- 파이썬 ide 환경 세팅, 각종 라이브러리 pip install  
+-- collections channel 세팅 수정 완료  
+-- corsheaders 직접 설치가 안되는 관계로 github 주소로 설치 pip install git+https://github.com/adamchainz/django-cors-headers.git  
+-- daphne 설치 및 세팅 완료 daphne translate_project.asgi:application  
+-- translate_db 생성 및 users_app mirgrate -> django 유저 관련 테이블 생성  
 -- but, 로그인을 안하면 django_session 테이블 미생성 -> 기존db 에서 복사해서 수정완료 -> 메인 index 페이지 정상진입 확인
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/93d618e3-6658-4908-afeb-773d196f595c/8c24dd4c-6576-47cd-be32-32d1cf355fcf/Untitled.png)
--- data_export.sql translate_db에 import 완료 -> 전 페이지 정상 진입 확인
-
-
-#### fork v0.1.0 번역해줘 프로젝트 fork origin ver.
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/93d618e3-6658-4908-afeb-773d196f595c/8c24dd4c-6576-47cd-be32-32d1cf355fcf/Untitled.png)  
+-- data_export.sql translate_db에 import 완료 -> 전 페이지 정상 진입 확인  
+  
+#### fork v0.1.0 번역해줘 프로젝트 fork origin ver.  
 
 
 
 ===========================================================
-
-
-# 원본 repository
-https://github.com/ahnjj/Translate_me
 
 
 # 번역해조
