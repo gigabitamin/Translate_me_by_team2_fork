@@ -2,7 +2,7 @@
 
 
 
-#### 0.1.1 python 라이브러리 및 ide 환경 설정, db 세팅
+#### fork v0.1.1 python 라이브러리 및 ide 환경 설정, db 세팅
 -- settings 파일에서 eviron Env 관련 주석처리 or 수정처리 -> 윈도우에서 한글파일 에러 발생시 복구
 -- 파이썬 ide 환경 세팅, 각종 라이브러리 pip install
 -- collections channel 세팅 수정 완료
@@ -14,7 +14,7 @@
 -- data_export.sql translate_db에 import 완료 -> 전 페이지 정상 진입 확인
 
 
-#### 0.1.0 번역해줘 프로젝트 fork ver.
+#### fork v0.1.0 번역해줘 프로젝트 fork origin ver.
 
 
 
