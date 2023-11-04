@@ -12,26 +12,28 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 import db_settings
-from environ import Env
+# from environ import Env # 주석처리 -kdy 231104
 import collections # 장고 pydenticon 파이썬 3.10버전 이후 지원 안해서 해결방안
 
 # 장고 pydenticon 파이썬 3.10버전 이후 지원 안해서 해결방안
+# if not hasattr(collections, 'Callable'):
+# 	collections.Callable = collections.abc.Callable # 주석처리 -kdy 231104
+# python 3.10 이후 사용자를 위해 abc. 삭제 -kdy 231104
 if not hasattr(collections, 'Callable'):
-	collections.Callable = collections.abc.Callable
-
+	collections.Callable = collections.abc.Callable	
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# 환경변수 관리
-env = Env()
-# .env 경로에 파일이 있으면, 환경변수로서 읽어들임
-env_path: Path = BASE_DIR / '.env'
-if env_path.is_file():
-    # .env 파일에 한글이 포함된 경우도 처리하기 위해 encoding="utf8"을 지정(안그러면 윈도우에서 오류)
-    with env_path.open('rt', encoding='utf-8') as f:
-        env.read_env(f, overwrite=True)
-
+# # 환경변수 관리
+# env = Env()
+# # .env 경로에 파일이 있으면, 환경변수로서 읽어들임
+# env_path: Path = BASE_DIR / '.env'
+# if env_path.is_file():
+#     # .env 파일에 한글이 포함된 경우도 처리하기 위해 encoding="utf8"을 지정(안그러면 윈도우에서 오류)
+#     with env_path.open('rt', encoding='utf-8') as f:
+#         env.read_env(f, overwrite=True) 
+# 29-35라인 주석처리 -kdy 231104
 
 
 # Quick-start development settings - unsuitable for production
@@ -166,8 +168,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
 # 언어코드 변경- 한국어로, 디폴트는 영어
-# LANGUAGE_CODE = 'en-us'
-LANGUAGE_CODE = env.str("LANGUAGE_CODE", default="en-us")
+LANGUAGE_CODE = 'en-us' 
+# LANGUAGE_CODE = env.str("LANGUAGE_CODE", default="en-us") # 주석처리 -kdy 231104
 
 TIME_ZONE = 'UTC'
 # TIME_ZONE = 'Asia/Seoul'
@@ -204,7 +206,8 @@ LOGIN_REDIRECT_URL = '/'
 
 
 # OpenAI API key
-OPENAI_API_KEY = env.str("OPENAI_API_KEY")
+# OPENAI_API_KEY = env.str("OPENAI_API_KEY") # 주석처리 -kdy 231104
+OPENAI_API_KEY = str("OPENAI_API_KEY")
 
 
 LOGGING = {
