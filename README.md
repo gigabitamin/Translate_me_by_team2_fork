@@ -20,7 +20,7 @@ https://github.com/ahnjj/Translate_me
 -- translate_db 생성 및 users_app mirgrate -> django 유저 관련 테이블 생성  
 -- but, 로그인을 안하면 django_session 테이블 미생성 -> 기존db 에서 복사해서 수정완료 -> 메인 index 페이지 정상진입 확인
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/93d618e3-6658-4908-afeb-773d196f595c/8c24dd4c-6576-47cd-be32-32d1cf355fcf/Untitled.png)
+![Untitled](https://www.notion.so/2-231104-4dc22405145b47818ba48cf47540474f?pvs=4#ddb27bf1c47c4f3889e838873d14b38c)
 
 -- data_export.sql translate_db에 import 완료 -> 전 페이지 정상 진입 확인  
   
